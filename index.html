@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="script.js"></script>
+		<title>JS dom ex1</title>
+	</head>
+	<body class="p-4">
+		<h1 id="myHead" class="text-5xl font-bold">Hello World!</h1>
+		<button
+			type="button"
+			onclick="changeText()"
+			class="font-bold bg-sky-400 px-8 py-4 mt-8 rounded-3xl hover:bg-sky-800 hover:text-white"
+		>
+			Click me
+		</button>
+
+		<button
+			type="button"
+			onmouseenter="showHidden()"
+			onmouseleave="showHidden()"
+			class="font-bold bg-sky-400 px-8 py-4 mt-4 rounded-3xl hover:bg-sky-800 hover:text-white"
+		>
+			Hover Me
+		</button>
+		<p id="hidden-text" class="bg-orange-100 mt-8 p-5 rounded-3xl hidden">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ratione,
+			explicabo laudantium molestias voluptas quidem ducimus omnis debitis eius
+			dicta iusto molestiae voluptate aspernatur ipsam cum, nulla amet velit
+			illum.
+		</p>
+	</body>
+</html>
